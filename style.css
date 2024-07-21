@@ -1,0 +1,421 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  
+  #home {
+    background-color:  #7600bc;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    height: 5mm;
+   }
+  
+  .topmenu {
+    color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration:none;
+  }
+  
+  .topmenu:hover {
+    color: white;
+    /* Add the styles here */
+  }
+  
+  .topdiv {
+    float: right;
+    padding-right: 1cm;
+  }
+
+  
+  
+  .profile_name {
+    float: left;
+    padding-left: 2cm;
+    /* Add the styles here */
+  }
+  
+  .profile_name .contact_info {
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .contact_info img {
+    width:25px;
+    margin-right: 10px;
+    float:left;
+  }
+
+  
+  
+  /* Titles */
+  
+  h2 {
+    text-align: justify;
+    font-size: 50px;
+    text-align: center;
+    float: left;
+    color: #7600bc;
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  
+  
+  .introduction {
+    text-align: justify;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation-duration: 5s;
+    position: relative;
+  }
+  
+  /* Used in the About Me sections */
+  
+  .container {
+    display: flex;
+  }
+
+  .social-icons a {
+    font-size: 10px;
+    color: #333;
+    margin-right: 10px;
+  }
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  .img-fluid {
+    max-width: 50%;
+    height: 10px;
+  }
+
+  
+  /* About Me */
+  
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  #about-me h1 {
+    font-size: 65px;
+    margin-top: 90px;
+    color: #7600bc;
+  }
+  
+  #about-me p {
+    font-size: 25px;
+    color: rgb(128, 128, 128);
+    margin-top: -1cm;
+  }
+  
+  .profile_image {
+    width: 200px;
+    height: fit-content;
+    vertical-align: middle;
+    margin: 5px;
+    align-items: center
+  }
+  .container 
+  {
+    display: flex;
+    justify-content: center;
+    align-items : center;
+  }
+
+
+
+
+ 
+  
+/* Add hover animation to social icons */
+
+.social-icons a img{
+  font-size: 24px;
+  color: #333;
+  margin-right: 30px;
+  width:80px;
+  height:60px;
+  
+}
+ 
+.social-icons a img:hover {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/* Education section */
+#education {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+
+
+#education li {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+#education strong {
+  font-weight: bold;
+}
+
+/* Projects section */
+#projects {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+#projects h2 {
+  color: #7600BC;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-img-down
+{
+  height: 200px;
+  object-fit:fill;
+}
+.card-img-down:hover{
+  transform:scale(1.1);
+  overflow:hidden;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+/* project details...button..*/
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+
+.profile{
+  position:absolute;
+  margin-top:2px;
+  top:0%;
+  margin-left:5px;
+
+}
+
+ /* Add smooth scroll to anchor links */
+ a[href^="#"] {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+a[href^="#"]:hover {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+/* Style for active menu link */
+.active {
+  color: #3498db;
+  font-weight: bold;
+}
+
+footer p{
+    background-color: #fff;
+    text-align: center;
+    padding:5px;
+}
+  
+  
+
+  
+  
+    
+  
+
+
+/* Recommendations */
+
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 21.875rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 18px;
+  height:150px
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scroll to Top Button */
+
+.iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Form Pop-up */
+
+.popup {
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+/* Recommendation Form */
+
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px;  
+  width:100%;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+}
+
+/* Buttons */
+
+button {
+  background-color: #fff;
+  border: 1px solid #7600bc;
+  color: #7600bc;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
